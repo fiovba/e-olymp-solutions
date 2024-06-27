@@ -1,0 +1,12 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main() 
+{
+    int n,say;
+    cin>>n;
+    say=2*n+ceil(2*sqrt(n));
+    cout<<say;
+
+    return 0;
+}
