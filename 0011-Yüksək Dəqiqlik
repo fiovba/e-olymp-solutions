@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+    int m, n, k, d;
+    scanf("%d %d %d", &m, &n, &k);
+    printf("%d.", m / n);
+    d = m % n;
+
+    for (int i = 0; i < k; i++) {
+        d *= 10;
+        printf("%d", d / n);
+        d %= n;
+    }
+
+    return 0;
+}
