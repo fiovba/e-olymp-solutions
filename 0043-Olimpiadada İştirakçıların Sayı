@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+int main() {
+   long long m,k,n,d,sur,mex;
+   cin>>k>>n>>m>>d;
+   sur=(m*k*n*d);
+   mex=m*k*n-m*n-k*n-m*k;
+   if(sur%mex==0){
+       cout<<sur/mex;
+   }else{
+       cout<<"-1";
+   }
+   
+    return 0;
+}
