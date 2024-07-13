@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+int main() {
+  int n, m, minus = 1;
+  cin >> n;
+  m = 1;
+  for  (int a = 1; n> 0; a *= 10) {
+    for  (int b = a; b < a*10; b++) {
+      if ((n - minus) < 0) {
+        cout << 0;
+        return 0;
+      }
+      if ((n - minus) == 0) {
+        cout << m;
+        return 0;
+      }
+      n-= minus;
+      m++;
+    }
+    minus++;
+ }
+return 0;
+}
