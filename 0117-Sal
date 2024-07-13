@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a[1001];
+    int n, m, rez = 0, k, i, j;
+    cin >> n >> m;
+
+    for (i = 1; i <= n; i++)
+        cin >> a[i];
+
+    for (i = 1000; i >= 1; i--) {
+        k = 0;
+        for (j = 1; j <= n; j++)
+            k += (a[j] / i);
+        
+        if (k >= m) {
+            rez = i;
+            cout << rez << endl;
+            return 0;
+        }
+    }
+    return 0;
+}
