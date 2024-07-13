@@ -1,0 +1,17 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main () {
+ long long  n,i,s=0;
+ cin>>n;
+ while(n!=1){
+     if(n%2==0){
+         n/=2;
+     }else{
+         n+=1;
+     }
+     s++;
+ }
+  cout<<s;
+   return 0;
+ }
