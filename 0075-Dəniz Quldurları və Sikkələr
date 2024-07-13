@@ -1,0 +1,11 @@
+#include <stdio.h> 
+int main(){
+int m,a, s=0,b=0; 
+scanf("%d %d",&a,&m); while(m-b>=a) {
+b+=a;
+s++;
+a++;
+}
+ printf("%d",s); 
+return 0; 
+}
