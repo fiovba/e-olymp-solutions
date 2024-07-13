@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int n,s=1,a;
+    cin>>n;
+   while(s*2<=n){
+       s*=2;
+   }
+   a=n-s;
+   if(a==0){
+       cout<<"0";
+   }else{
+       cout<<a;
+   }
+
+    return 0;
+}
